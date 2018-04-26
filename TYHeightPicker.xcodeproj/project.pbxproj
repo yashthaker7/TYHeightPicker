@@ -12,6 +12,8 @@
 		CFA74E092091903600CBAD2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA74E072091903600CBAD2B /* Main.storyboard */; };
 		CFA74E0B2091903600CBAD2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA74E0A2091903600CBAD2B /* Assets.xcassets */; };
 		CFA74E0E2091903600CBAD2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA74E0C2091903600CBAD2B /* LaunchScreen.storyboard */; };
+		CFA74E162091908000CBAD2B /* TYHeightPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA74E152091908000CBAD2B /* TYHeightPicker.swift */; };
+		D39EA5E52092461300E114DF /* Screenshot in Resources */ = {isa = PBXBuildFile; fileRef = D39EA5E42092461200E114DF /* Screenshot */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,9 @@
 		CFA74E0A2091903600CBAD2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFA74E0D2091903600CBAD2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFA74E0F2091903600CBAD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFA74E152091908000CBAD2B /* TYHeightPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TYHeightPicker.swift; sourceTree = "<group>"; };
+		D39EA5E42092461200E114DF /* Screenshot */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Screenshot; sourceTree = "<group>"; };
+		D39EA5E62092463F00E114DF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +43,8 @@
 		CFA74DF72091903600CBAD2B = {
 			isa = PBXGroup;
 			children = (
+				D39EA5E62092463F00E114DF /* README.md */,
+				D39EA5E42092461200E114DF /* Screenshot */,
 				CFA74E022091903600CBAD2B /* TYHeightPicker */,
 				CFA74E012091903600CBAD2B /* Products */,
 			);
@@ -56,6 +63,7 @@
 			children = (
 				CFA74E032091903600CBAD2B /* AppDelegate.swift */,
 				CFA74E052091903600CBAD2B /* ViewController.swift */,
+				CFA74E152091908000CBAD2B /* TYHeightPicker.swift */,
 				CFA74E072091903600CBAD2B /* Main.storyboard */,
 				CFA74E0A2091903600CBAD2B /* Assets.xcassets */,
 				CFA74E0C2091903600CBAD2B /* LaunchScreen.storyboard */,
@@ -123,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D39EA5E52092461300E114DF /* Screenshot in Resources */,
 				CFA74E0E2091903600CBAD2B /* LaunchScreen.storyboard in Resources */,
 				CFA74E0B2091903600CBAD2B /* Assets.xcassets in Resources */,
 				CFA74E092091903600CBAD2B /* Main.storyboard in Resources */,
@@ -138,6 +147,7 @@
 			files = (
 				CFA74E062091903600CBAD2B /* ViewController.swift in Sources */,
 				CFA74E042091903600CBAD2B /* AppDelegate.swift in Sources */,
+				CFA74E162091908000CBAD2B /* TYHeightPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +285,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZQXM6EAC55;
+				DEVELOPMENT_TEAM = FWQ7N3RX7G;
 				INFOPLIST_FILE = TYHeightPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YashThaker.TYHeightPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,8 +301,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZQXM6EAC55;
+				DEVELOPMENT_TEAM = FWQ7N3RX7G;
 				INFOPLIST_FILE = TYHeightPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YashThaker.TYHeightPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";

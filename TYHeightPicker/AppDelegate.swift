@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  TYHeightPicker
 //
-//  Created by Pixster Studio on 26/04/18.
-//  Copyright © 2018 YashThaker. All rights reserved.
+//  Created by Yash Thaker on 26/04/18.
+//  Copyright © 2018 Yash Thaker. All rights reserved.
 //
 
 import UIKit

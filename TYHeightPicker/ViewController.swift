@@ -2,24 +2,57 @@
 //  ViewController.swift
 //  TYHeightPicker
 //
-//  Created by Pixster Studio on 26/04/18.
-//  Copyright © 2018 YashThaker. All rights reserved.
+//  Created by Yash Thaker on 26/04/18.
+//  Copyright © 2018 Yash Thaker. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var displayLbl: UILabel!
+    
+    var heighPicker: TYHeightPicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        setupTYHeightPicker()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func setupTYHeightPicker() {
+        heighPicker = TYHeightPicker()
+        heighPicker.translatesAutoresizingMaskIntoConstraints = false
+        heighPicker.delegate = self
+        self.view.addSubview(heighPicker)
+        
+        heighPicker.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+        heighPicker.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
+        heighPicker.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+        heighPicker.heightAnchor.constraint(equalToConstant: 145).isActive = true
     }
-
-
+    
 }
+
+extension ViewController: TYHeightPickerDelegate {
+    
+    func chooseHeight(height: CGFloat, unit: HeightUnit) {
+        if unit == .CM {
+            displayLbl.text = "\(Int(height)) \(unit)"
+        }
+        
+        if unit == .Feet {
+            let feet = Int(height / 12)
+            let inch = Int(height) % 12
+            
+            if inch != 0 {
+                displayLbl.text = "\(feet) feet \(inch) inch"
+
+            } else  {
+                displayLbl.text = "\(feet) feet"
+            }
+        }
+    }
+}
+
 
