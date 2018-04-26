@@ -1,6 +1,6 @@
 #  TYHeightPicker
 
-It's custom height picker for your health app. you can you this where picking up height from user, Or you can use as a custom picker too.
+It's custom height picker for your health app. you can use this where picking up height from user, Or you can use as a custom picker too.
 
 ![gif](Screenshot/TYHeightPicker.gif) <br />
  
