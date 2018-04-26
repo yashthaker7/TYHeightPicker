@@ -46,4 +46,4 @@ Delegate Method
     }
 ```
 
-<img src="Screenshot/straight.gif" width="250">
+![gif](Screenshot/straight.gif)
