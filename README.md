@@ -7,7 +7,6 @@ It's custom height picker for your health app. you can use this where picking up
 How to use 
 ---------
 
-
 Import `YTHeightPicker.swift` into your project.
 
 ```swift
@@ -37,7 +36,6 @@ Import `YTHeightPicker.swift` into your project.
 ```
 
 ### Delegate Method 
----------
 
 ```swift
     func selectedHeight(height: CGFloat, unit: HeightUnit) {
