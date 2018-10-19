@@ -36,14 +36,18 @@ Import `YTHeightPicker.swift` into your project.
 }
 ```
 
-Delegate Method 
+### Delegate Method 
 ---------
 
-
 ```swift
-      func selectedHeight(height: CGFloat, unit: HeightUnit) {
+    func selectedHeight(height: CGFloat, unit: HeightUnit) {
         print(height, unit)
     }
+```
+### Set default selected height 
+
+```swift
+    heighPicker.setDefaultHeight(67, unit: .Inch)
 ```
 
 ![gif](Screenshot/straight.gif)

@@ -30,6 +30,8 @@ class ViewController: UIViewController {
         heighPicker.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
         heighPicker.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
         heighPicker.heightAnchor.constraint(equalToConstant: 145).isActive = true
+        
+        heighPicker.setDefaultHeight(67, unit: .Inch)
     }
     
 }

@@ -132,6 +132,7 @@ class TYHeightPicker: UIView {
     }
     
     func setDefaultHeight(_ height: CGFloat, unit: HeightUnit) {
+        self.layoutSubviews()
         selectedIndex = unit == .CM ? 0 : 1
         collectionView.reloadData()
         collectionView.layoutSubviews()
