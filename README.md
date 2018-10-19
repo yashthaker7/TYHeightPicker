@@ -41,7 +41,7 @@ Delegate Method
 
 
 ```swift
-      func chooseHeight(height: CGFloat, unit: HeightUnit) {
+      func selectedHeight(height: CGFloat, unit: HeightUnit) {
         print(height, unit)
     }
 ```

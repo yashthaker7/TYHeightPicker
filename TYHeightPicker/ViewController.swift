@@ -36,18 +36,18 @@ class ViewController: UIViewController {
 
 extension ViewController: TYHeightPickerDelegate {
     
-    func chooseHeight(height: CGFloat, unit: HeightUnit) {
+    func selectedHeight(height: CGFloat, unit: HeightUnit) {
         if unit == .CM {
             displayLbl.text = "\(Int(height)) \(unit)"
         }
         
-        if unit == .Feet {
+        if unit == .Inch {
             let feet = Int(height / 12)
             let inch = Int(height) % 12
             
             if inch != 0 {
                 displayLbl.text = "\(feet) feet \(inch) inch"
-
+                
             } else  {
                 displayLbl.text = "\(feet) feet"
             }
